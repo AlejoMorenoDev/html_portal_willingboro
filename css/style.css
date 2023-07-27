@@ -99,10 +99,6 @@ body{
 
 
 
-.nav-item{
-    display: flex;
-    align-items: center;
-}
 
 
 @media (min-width: 1200px )and (max-width: 1400px ){
@@ -116,6 +112,9 @@ body{
     .navbar-nav{
         font-size:15px ;
     }
+    
+    
+    
 
     .item-calendar> br{
         display: none;
@@ -138,6 +137,34 @@ body{
 
 }
 
+
+@media (max-width: 1200px) {
+    #myCarousel{
+        height: 32em;
+    }
+
+    .carousel-item,
+    .carousel-inner{
+        height: 100%;
+    }
+
+    .carousel-item> img{
+        object-fit: none;
+    }
+
+
+    #imgSlide1,#imgSlide2{
+        object-position: 24% 100%;
+    }
+
+    #imgSlide3{
+        object-position: 75% 100%;
+        
+    }
+    
+
+}
+
 @media (max-width: 992px  ){
     .logo-willing{
         width: 90% !important;
@@ -154,6 +181,7 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
 
     }
 
@@ -679,12 +707,12 @@ body{
     border-right-width: .1em;
 } */
 
-.txt-blue-light{
+/* .txt-blue-light{
     color: var(--Light-blue);
     font-weight: 500;
     line-height: 1.2;pues en
     font-size: 1.1rem;
-}
+} */
 
 .item-data-blue{
     width: 22px;
