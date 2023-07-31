@@ -238,10 +238,29 @@ body{
     display: none;
 }
 
-.navbar-dark .navbar-toggler-icon {
+/* .navbar-dark .navbar-toggler-icon {
     background-image: url(../assets/img/icon_phone.svg);
+} */
+
+
+/* .navbar-dark .navbar-toggler-icon {
+    font-size: 2rem;
+    color: var(--dark-blue);
+} */
+
+.navbar-toggler-icon{
+    font-size: 3rem;
+    color: #28357F;
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    
 }
 
+/* img:hover{
+    transform: translateY(-5px);
+    opacity: .9;
+    
+} */
 
 
 
@@ -318,10 +337,29 @@ body{
     height: 60px;
     border-radius: 35px;
     margin-top: 150px;
+}
+
+.btn-calendar{
+    color: var(--white);
+    font-family: var(--font-montserrat);
+    background-color: var(--Light-blue);
+    border: none;
     
-    
-    
-    
+}
+
+.btn-calendar:hover{
+    background-color: var(--light-grey);
+    border: none;
+}
+
+.btn-more-news{
+    font-family: var(--font-montserrat);
+
+}
+
+.btn-dark:hover{
+    background-color: var(--Light-blue);
+    border: none;
 }
 
 
@@ -534,6 +572,21 @@ body{
 .ico-btn{
     width: 1.67rem;
 }
+.btn:hover{
+    transform: translateY(-3px);
+    opacity: .9;
+
+}
+
+.icon-links-interest:hover{
+    transform: translateY(-5px);
+    opacity: .9;
+    cursor: pointer;
+}
+
+.text-links-interest>div>div>p{
+    cursor: pointer;
+}
 
 .btn-header{
     padding: 10px;
@@ -702,6 +755,13 @@ body{
     align-items: center;
 }
 
+.txt-general-data{
+   color: var(--white);
+   font-family: var(--font-montserrat);
+}
+
+
+
 /* .border-general-data{
     border-right: var(--white);
     border-right: solid #ffffff;
@@ -857,9 +917,10 @@ body{
 
 
 .btn-contact-footer{
-    padding: .625rem;
-    padding-right: 1.87rem;
-    padding-left: .5rem;
+    padding: .8rem;
+    padding-right: 2rem;
+    padding-left: 1.5rem;
+    
     background-color:var(--Light-blue);
     color: var(--white);
     margin-left: 2px;
