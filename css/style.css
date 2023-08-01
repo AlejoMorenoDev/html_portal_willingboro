@@ -28,6 +28,11 @@ body{
     overflow-x: hidden;
 }
 
+a{
+    text-decoration: none;
+    color: none;
+}
+
 
 .container-fluid{
     padding: 0px;
@@ -37,6 +42,7 @@ body{
     --white:#FFFFFF;
     --black: #000000;
     --dark-blue: #28357F;
+    --dark-blue-light: #527cce;
     --Light-blue:#18A6DE;
     --dark-gray: #424C52;
     --light-grey: #DCDCDB;
@@ -84,9 +90,6 @@ body{
 }
 
 
-
-
-
 .box-btn-permanent hr{
     border: .01px solid var(--white);
     opacity: .50;
@@ -96,6 +99,15 @@ body{
     margin-bottom: 0px;
     padding: 0px;
 }
+
+.nav-item:hover{
+    background-color: #18A6DE;
+
+}
+
+
+ 
+
 
 
 
@@ -123,10 +135,6 @@ body{
     #generalData > hr:nth-child(6){
         display: none;
     }
-
-   
-    
-
 }
 
 
@@ -134,7 +142,6 @@ body{
     .btn-header , .btn-header-service> span{
         font-size: 12px;
     }
-
 }
 
 
@@ -161,8 +168,6 @@ body{
         object-position: 75% 100%;
         
     }
-    
-
 }
 
 @media (max-width: 992px  ){
@@ -190,8 +195,6 @@ body{
         height:0.2em !important ;
         width:22em !important;
         margin: 15px 0px 0px 0px !important ; 
-       
-    
     }
 }
 
@@ -209,9 +212,9 @@ body{
     }
 
 
-    .box-btn-permanent{
+    /* .box-btn-permanent{
         display: none;
-    }
+    } */
 
     .news > div,.container-calendar{
         padding: 0px 15px;
@@ -231,11 +234,6 @@ body{
     .text-principal > br{
         display: none;
     }
-    
-}
-
-.box-btn-permanent{
-    display: none;
 }
 
 /* .navbar-dark .navbar-toggler-icon {
@@ -309,7 +307,6 @@ body{
     font-size: 5.625rem;
     font-weight: 700;
     line-height: .5;
-    
 }
 
 .line-blue-carousel{
@@ -327,6 +324,13 @@ body{
     border-top: solid 10px var(--Light-blue);
     border-radius: 0px;
 }
+
+.card-img-top:hover{
+    filter: brightness(70%);
+}
+
+
+
 
 .btn-info-carousel {
     font-family: var(--font-montserrat);
@@ -395,8 +399,6 @@ body{
     cursor: pointer;
     padding: 10px 20px;
 }
-
-
 
 
 .box-logo-willing{
@@ -483,7 +485,6 @@ body{
     font-weight: 300;
     font-size: 2.5rem;
     padding: 0px;
-    
 }
 
 
@@ -495,7 +496,6 @@ body{
     font-weight: 700;
     font-size: 2.5rem;
     padding: 0px;
-    
 }
 
 .container h1{
@@ -535,6 +535,11 @@ body{
     margin-top: .7rem;
 }
 
+.text-links-interest p:hover{
+    color: var(--dark-blue-light);
+}
+
+
 .btn-links-interest img{
     width: 10rem;
     margin-top: 0.7rem;
@@ -569,13 +574,21 @@ body{
     width: 27.25rem;
 }
 
+.ico-btn-home{
+    width: 1.67rem;
+}
+
+.nav-item:hover>a>.ico-btn-home>path{
+    stroke: rgba(255,255,255,.55) !important;
+}
+
 .ico-btn{
     width: 1.67rem;
 }
+
 .btn:hover{
     transform: translateY(-3px);
     opacity: .9;
-
 }
 
 .icon-links-interest:hover{
@@ -729,7 +742,6 @@ body{
     align-items: center;
     padding-bottom: 4rem;
     margin-top: 6rem;
-
 }
 
 .box-general-data hr{
@@ -740,8 +752,6 @@ body{
     color: var(--white);
     padding: 0px 1px;
     margin: 85px 0px 0px 0px ;
-   
-
 }
 
 .titles-principales{
@@ -791,7 +801,6 @@ body{
     font-family: var(--font-montserrat);
     font-weight: 700;
     font-size: 1.69rem;
-
 }
 
 .calendar{
@@ -799,7 +808,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     width: auto;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
 }
 
 
@@ -914,8 +923,6 @@ body{
     margin-top: 20px;
 }
 
-
-
 .btn-contact-footer{
     padding: .8rem;
     padding-right: 2rem;
@@ -928,15 +935,9 @@ body{
     margin-top: 13rem;
 }
 
-
-
-
-
-
-
-
-
-
+.btn-general-redes:hover>a>.icon-redes>path{
+    fill: var(--Light-blue) !important;
+}
 
 
 .navbar .megamenu{ padding: 1rem; }
