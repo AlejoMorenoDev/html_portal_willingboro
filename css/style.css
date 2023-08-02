@@ -155,7 +155,7 @@ a{
         height: 100%;
     }
 
-    .carousel-item> img{
+    .carousel-item>a> img{
         object-fit: none;
     }
 
