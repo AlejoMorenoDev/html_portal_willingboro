@@ -60,7 +60,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--dark-blue-hover);
+    background-color: var(--dark-blue);
     cursor: pointer;
     z-index: 3;
     border-radius: 20px 0px 00px 20px;
@@ -68,12 +68,19 @@ a{
 }
 
 .box-btn-permanent button{
-    background-color: var(--dark-blue-hover);
-    width: 4.5rem;
+    background-color: var(--dark-blue);
+    width: 3.8rem;
     border: none;
     color: var(--white);
     margin: 25px 20px 0px 20px;
     
+}
+
+.box-btn-permanent:hover {
+    background-color: var(--dark-blue-hover);
+}
+.box-btn-permanent:hover button{
+    background-color: var(--dark-blue-hover);
 }
 
 .box-btn-permanent span{
@@ -103,6 +110,19 @@ a{
 .nav-item:hover{
     background-color: #18A6DE;
 
+}
+
+.card-title{
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    color: var(--dark-gray);
+    margin-bottom: 1em;
+}
+
+.card-text{
+    font-family: var(--font-ws);
+    font-size: 1.2rem;
+    
 }
 
 
@@ -786,21 +806,48 @@ a{
 } */
 
 .item-data-blue{
-    width: 22px;
+    width: 2.2rem;
+}
+
+.item-data-blue:hover{
+    opacity: .5;
+   
+    
 }
 
 .txt-data{
     padding: 0;
-    margin: 0 0 0 8px;
+    margin: 0 0 0 20px;
     font-family: var(--font-montserrat);
     font-weight: 300;
-    font-size: 1.69rem;
+    font-size: 2.8rem;
+}
+
+.txt-data:hover{
+    opacity: .5;
 }
 
 .txt-day{
     font-family: var(--font-montserrat);
     font-weight: 700;
-    font-size: 1.69rem;
+    font-size: 2.8rem;
+}
+
+
+
+.txt-data-evento{
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    font-size: 1.15rem;
+}
+
+.txt-data-evento:hover{
+    opacity: .5;
+}
+
+.txt-data-fecha{
+    font-family: var(--font-ws);
+    font-size: 1.15rem;
 }
 
 .calendar{
