@@ -48,6 +48,10 @@ a{
     --light-grey: #DCDCDB;
     --dark-blue-hover:#394FAA;
     --Light-blue-hover:#1EC1F4;
+    --light-green: #21812a;
+    --dark-green: #195b1c;
+    --light-red: #e13024;
+    --dark-red: #9e2020;
     --font-montserrat: 'Montserrat', sans-serif;
     --font-ws: 'Work Sans', sans-serif;
 }
@@ -60,7 +64,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--dark-blue);
+    background-color: var(--light-green);
     cursor: pointer;
     z-index: 3;
     border-radius: 20px 0px 00px 20px;
@@ -68,7 +72,7 @@ a{
 }
 
 .box-btn-permanent button{
-    background-color: var(--dark-blue);
+    background-color: var(--light-green);
     width: 3.8rem;
     border: none;
     color: var(--white);
@@ -77,10 +81,10 @@ a{
 }
 
 .box-btn-permanent:hover {
-    background-color: var(--dark-blue-hover);
+    background-color: var(--dark-green);
 }
 .box-btn-permanent:hover button{
-    background-color: var(--dark-blue-hover);
+    background-color: var(--dark-green);
 }
 
 .box-btn-permanent span{
@@ -220,6 +224,7 @@ a{
 
 
 @media (max-width: 575px ){
+    
     .btn-header , .btn-header-service{
         font-size: 17px;
         justify-content: center;
@@ -232,9 +237,9 @@ a{
     }
 
 
-    /* .box-btn-permanent{
+    .box-btn-permanent{
         display: none;
-    } */
+    }
 
     .news > div,.container-calendar{
         padding: 0px 15px;
@@ -823,9 +828,7 @@ a{
     font-size: 2.8rem;
 }
 
-.txt-data:hover{
-    opacity: .5;
-}
+
 
 .txt-day{
     font-family: var(--font-montserrat);
@@ -874,6 +877,56 @@ a{
     width: 100%;
     height: 0px;
 }
+
+/* #circulorojo{
+    height: 2.2rem;
+    width: 2.2rem;
+    margin-right: 7px;
+    background: #E5325D;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    border-radius: 50%; */
+    /* display: inline;
+} */
+
+.cuadro-azul{
+    height: 2.2rem;
+    width: 2.2rem;
+    /* margin-right: 7px; */
+    background: var(--Light-blue);
+    transition: 0.4s linear
+    /* -moz-border-radius:50px;
+    -webkit-border-radius:50px; */
+    /* border-radius: 50%; */
+    /* display: inline; */
+}
+
+
+
+/* #circulorojo:hover{
+    opacity: .5;
+    border-radius: 50%;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+} */
+
+.item-container-calendar:hover .cuadro-azul {
+    opacity: .5;
+    border-radius: 50%;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+}
+
+.item-container-calendar:hover  a>.txt-data{
+    opacity: .5;
+    border-radius: 50%;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+}
+
+
+
+
 
     /* height: 945px; */
 .button-calendar{
